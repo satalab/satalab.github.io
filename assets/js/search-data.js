@@ -3,8 +3,8 @@ const ninja = document.querySelector('ninja-keys');
 
 // add the home and posts menu items
 ninja.data = [{
-    id: "nav-about",
-    title: "about",
+    id: "nav-a-href-https-english-kookmin-ac-kr-kookmin-university-a",
+    title: "<a href="https://english.kookmin.ac.kr">Kookmin University</a>",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
