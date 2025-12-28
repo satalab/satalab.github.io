@@ -1,9 +1,9 @@
 ---
 layout: about
-title: about
+title: Home
 permalink: /
-title: <a href="https://english.kookmin.ac.kr">Kookmin University</a>
-subtitle: 631-ho, Future Hall, Kookmin University, 77, Jeongneung-ro, Seongbuk-gu, Seoul, South Korea
+subtitle: <a href="https://english.kookmin.ac.kr">Kookmin University</a>
+subsubtitle: 631-ho, Future Hall, Kookmin University, 77, Jeongneung-ro, Seongbuk-gu, Seoul, South Korea
 
 profile:
 
@@ -21,4 +21,4 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-We are polished pioneers at next-generation system architectural solutions!
+<span style="font-weight:bold;font-size:1.2em;"><i>We are polished pioneers at next-generation system architectural solutions!</i><span>
