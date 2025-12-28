@@ -26,5 +26,5 @@ latest_posts:
 our lab focuses on system architecture research, exploiting how computing systems can be designed to be more efficient, scalable, and robust.
 We value clear problem formulation, sound architectural design, and long-term impact over short-term results.
 We are looking for motivated researchers who enjoy reasoning about systems, principled solutions, and pushing ideas from concept to implementation.
-Open positions are available for <strong><i>Ph.D., M.S. students, and undergraduate interns</strong></i>.
+Open positions are available for <strong><i>Ph.D., M.S. students, and undergraduate interns</i></strong>.
 If you interested in joining our lab, please contact Prof. Se-Min Lim.
