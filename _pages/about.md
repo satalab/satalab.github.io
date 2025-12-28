@@ -2,7 +2,8 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href="https://english.kookmin.ac.kr">Kookmin University</a>. 631-ho, Future Hall, Kookmin University, 77, Jeongneung-ro, Seongbuk-gu, Seoul, South Korea
+title: <a href="https://english.kookmin.ac.kr">Kookmin University</a>
+subtitle: 631-ho, Future Hall, Kookmin University, 77, Jeongneung-ro, Seongbuk-gu, Seoul, South Korea
 
 profile:
 
