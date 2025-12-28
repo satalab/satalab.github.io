@@ -2,7 +2,8 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: customized # the website title (if blank, full name will be used instead)
+title: SATA LAB # the website title (if blank, full name will be used instead)
+subtitle: System Architecture for Target Applications
 first_name: Se-Min
 middle_name: Ryan
 last_name: Lim
