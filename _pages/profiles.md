@@ -5,8 +5,9 @@ title: Members
 description:
 nav: true
 nav_order: 3
-role_order: ["Postdoc", "PhD", "MS", "Undergraduate", "Alumni"]
+role_order: ["Professor", "Postdoc", "PhD", "MS", "Undergraduate", "Alumni"]
 role_titles:
+  Professor: "Professor"
   Postdoc: "Postdoctoral Researchers"
   PhD: "Ph.D. Students"
   MS: "M.S. Students"
@@ -14,9 +15,9 @@ role_titles:
   Alumni: "Alumni"
 
 profiles:
-  - name: "Hunjune Choo"
-    role: "Undergraduate"
-    image: "HUNJUNE.jpg"
+  - name: "Se-Min Ryan Lim"
+    role: "Professor"
+    image: "Se-Min_Lim.jpg"
     image_circular: true
     socials:
       - icon: "fa-solid fa-envelope"
@@ -27,6 +28,24 @@ profiles:
         label: "Google Scholar"
       - icon: "fa-brands fa-github"
         url: "https://github.com/SeMinLim"
+        label: "GitHub"
+      - icon: "fa-brands fa-linkedin"
+        url: "https://www.linkedin.com/in/seminlim"
+        label: "GitHub"
+        
+  - name: "Hunjune Choo"
+    role: "Undergraduate"
+    image: "HUNJUNE.jpg"
+    image_circular: true
+    socials:
+      - icon: "fa-solid fa-envelope"
+        url: "greenstar@kookmin.ac.kr"
+        label: "Email"
+      - icon: "fa-brands fa-github"
+        url: "https://github.com/greenstar1151"
+        label: "GitHub"
+      - icon: "fa-brands fa-linkedin"
+        url: "https://www.linkedin.com/in/hunjune-choo"
         label: "GitHub"
 
   - name: "Sang-Joon Park"
@@ -35,13 +54,13 @@ profiles:
     image_circular: true
     socials:
       - icon: "fa-solid fa-envelope"
-        url: "seminl1@kookmin.ac.kr"
+        url: "greenstar@kookmin.ac.kr"
         label: "Email"
-      - icon: "ai ai-google-scholar"
-        url: "https://scholar.google.com/citations?user=xZ_EVKEAAAAJ&hl"
-        label: "Google Scholar"
       - icon: "fa-brands fa-github"
-        url: "https://github.com/SeMinLim"
+        url: "https://github.com/greenstar1151"
+        label: "GitHub"
+      - icon: "fa-brands fa-linkedin"
+        url: "https://www.linkedin.com/in/hunjune-choo"
         label: "GitHub"
 
   - name: "Seo-Young Lee"
@@ -50,12 +69,12 @@ profiles:
     image_circular: true
     socials:
       - icon: "fa-solid fa-envelope"
-        url: "seminl1@kookmin.ac.kr"
+        url: "greenstar@kookmin.ac.kr"
         label: "Email"
-      - icon: "ai ai-google-scholar"
-        url: "https://scholar.google.com/citations?user=xZ_EVKEAAAAJ&hl"
-        label: "Google Scholar"
       - icon: "fa-brands fa-github"
-        url: "https://github.com/SeMinLim"
+        url: "https://github.com/greenstar1151"
+        label: "GitHub"
+      - icon: "fa-brands fa-linkedin"
+        url: "https://www.linkedin.com/in/hunjune-choo"
         label: "GitHub"
 ---
