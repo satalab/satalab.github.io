@@ -1,36 +1,95 @@
 ---
 layout: page
 ---
+
 <div class="post">
   <article>
-    <hr>
-    {% if page.profiles %}
-      {% for profile in page.profiles %}
-        <div class="profile float-{% if profile.align == 'left' %}left{% elsif profile.right == 'right' %}right{% else %}center{% endif %}">
-          {% if profile.image %}
-            {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
-            {% if profile.image_circular %}
-              {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-            {% else %}
-              {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
-            {% endif %}
-            {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.15}}px, (min-width: 576px) 18vw, 70vw"{% endcapture %}
-            {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
-          {% endif %}
-          {% if profile.more_info %}
-            <div class="more-info">{{ profile.more_info }}</div>
-          {% endif %}
-        </div>
 
-        <div class="clearfix">
-          {% if profile.content %}
-            {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
-            {{ profile_content | markdownify }}
-          {% else %}
-            {{ content }}
-          {% endif %}
-        </div>
-      {% endfor %}
+    {%- if content and content != "" -%}
+      <div class="mb-4">
+        {{ content }}
+      </div>
+    {%- endif -%}
+
+    {% if page.profiles %}
+
+      {%- assign role_order = page.role_order -%}
+      {%- if role_order == nil -%}
+        {%- assign role_order = page.profiles | map: "role" | uniq -%}
+      {%- endif -%}
+
+      {%- for role_key in role_order -%}
+        {%- assign members = page.profiles | where: "role", role_key -%}
+        {%- if members and members.size > 0 -%}
+
+          {%- assign section_title = role_key -%}
+          {%- if page.role_titles and page.role_titles[role_key] -%}
+            {%- assign section_title = page.role_titles[role_key] -%}
+          {%- endif -%}
+
+          <section class="members-section">
+            <h2 class="members-section-title">{{ section_title }}</h2>
+
+            <div class="members-grid">
+              {%- for profile in members -%}
+                <div class="member-card">
+
+                  {%- if profile.image -%}
+                    {%- assign profile_image_path = profile.image | prepend: 'assets/img/' -%}
+                    {%- if profile.image_circular -%}
+                      {%- assign profile_image_class = 'img-fluid z-depth-1 rounded-circle member-photo' -%}
+                    {%- else -%}
+                      {%- assign profile_image_class = 'img-fluid z-depth-1 rounded member-photo' -%}
+                    {%- endif -%}
+
+                    {%- capture sizes -%}140px{%- endcapture -%}
+                    {% include figure.liquid
+                      loading="lazy"
+                      path=profile_image_path
+                      class=profile_image_class
+                      sizes=sizes
+                      alt=profile.name
+                    %}
+                  {%- endif -%}
+
+                  {%- if profile.name -%}
+                    {%- if profile.url -%}
+                      <a class="member-name member-name-link" href="{{ profile.url }}" target="_blank" rel="noopener noreferrer">
+                        {{ profile.name }}
+                      </a>
+                    {%- else -%}
+                      <div class="member-name">{{ profile.name }}</div>
+                    {%- endif -%}
+                  {%- endif -%}
+
+                  {%- if profile.socials -%}
+                    <div class="member-social">
+                      {%- for s in profile.socials -%}
+                        {%- if s.url and s.icon -%}
+                          <a class="member-social-link"
+                             href="{{ s.url }}"
+                             target="_blank"
+                             rel="noopener noreferrer"
+                             aria-label="{{ s.label | default: 'social link' }}"
+                             title="{{ s.label | default: '' }}"
+                             data-tooltip="{{ s.label | default: '' }}">
+                            <i class="{{ s.icon }}"></i>
+                          </a>
+                        {%- endif -%}
+                      {%- endfor -%}
+                    </div>
+                  {%- endif -%}
+
+                </div>
+              {%- endfor -%}
+            </div>
+
+          </section>
+
+        {%- endif -%}
+      {%- endfor -%}
+
     {% endif %}
+
   </article>
 </div>
