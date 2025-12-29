@@ -248,6 +248,149 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+/* ===== Members (People) Sections ===== */
+.members-section {
+  margin-top: 2.5rem;
+}
+
+.members-section-title {
+  margin-bottom: 1rem;
+}
+
+/* ===== 4-column grid (desktop) ===== */
+.members-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr)); /* 한 줄 4명 */
+  gap: 2rem;
+  align-items: start;
+}
+
+@media (max-width: 1200px) {
+  .members-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 992px) {
+  .members-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 576px) {
+  .members-grid { grid-template-columns: repeat(1, 1fr); }
+}
+
+/* ===== Member card ===== */
+.member-card {
+  text-align: center;
+  padding: 1.25rem 1rem;
+  border: 1px solid var(--global-divider-color, #e5e5e5);
+  border-radius: 12px;
+  background: var(--global-bg-color, #fff);
+}
+
+.member-card figure {
+  margin: 0 0 0.9rem 0; /* figure.liquid 기본 margin 제거 */
+}
+
+/* picture size */
+.member-photo {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ===== Name ===== */
+.member-name {
+  font-weight: 600;
+  line-height: 1.2;
+  margin-top: 0.15rem;
+}
+
+.member-name-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.member-name-link:hover {
+  color: var(--global-theme-color, #2a7ae2);
+}
+
+/* ===== Social icons row ===== */
+.member-social {
+  margin-top: 0.7rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+/* Icon Button */
+.member-social-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  text-decoration: none;
+
+  color: var(--global-text-color, #333);
+  transition: transform 0.15s ease, color 0.15s ease, background-color 0.15s ease;
+}
+
+.member-social-link:hover,
+.member-social-link:focus-visible {
+  color: var(--global-theme-color, #2a7ae2);
+  background-color: color-mix(in srgb, var(--global-theme-color, #2a7ae2) 12%, transparent);
+  transform: translateY(-1px);
+  outline: none;
+}
+
+/* ===== Pretty tooltip (pure CSS) ===== */
+.member-social-link[data-tooltip]:after {
+  content: attr(data-tooltip);
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 10px);
+  transform: translateX(-50%) translateY(2px);
+
+  padding: 6px 10px;
+  border-radius: 8px;
+
+  background: rgba(0,0,0,0.85);
+  color: #fff;
+  font-size: 0.78rem;
+  line-height: 1;
+  white-space: nowrap;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  z-index: 10;
+}
+
+.member-social-link[data-tooltip]:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 4px);
+  transform: translateX(-50%);
+
+  border: 6px solid transparent;
+  border-top-color: rgba(0,0,0,0.85);
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease;
+  z-index: 10;
+}
+
+.member-social-link:hover:after,
+.member-social-link:focus-visible:after,
+.member-social-link:hover:before,
+.member-social-link:focus-visible:before {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
 // Navbar customization
 
 .navbar {
