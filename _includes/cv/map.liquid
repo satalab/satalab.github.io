@@ -1,29 +1,122 @@
-<table class="table table-cv table-sm table-borderless table-responsive">
-  {% for content in entry.contents %}
-    <tr>
-      <td class="p-1 pr-2 font-weight-bold">
-        <b>{{ content.name }}</b>
-      </td>
-      {% if content.value %}
-        <td class="p-1 pl-2 font-weight-light text">{{ content.value }}</td>
-      {% endif %}
-      {% if content.links %}
-        <td class="p-1 pl-2 font-weight-light text">
-          <div class="container-pdf">
-            {% for item in content.links %}
-              {% if item.link %}
-                <div class="container-link-button">
-                  {% if item.name %}
-                    <a href="{{ item.link }}" target="_blank" class="btncv z-depth-0">{{ item.name }}</a>
-                  {% else %}
-                    <a href="{{ item.link }}" target="_blank" class="btncv z-depth-0">doc</a>
-                  {% endif %}
+{%- assign sec = include.section | default: entry -%}
+{%- assign items = include.content | default: sec.contents | default: entry.contents -%}
+
+{%- assign has_profile_image = false -%}
+{%- assign has_social = false -%}
+
+{%- if sec and sec.profile_image -%}
+  {%- assign has_profile_image = true -%}
+{%- endif -%}
+
+{%- if sec and sec.social and sec.social.size > 0 -%}
+  {%- assign has_social = true -%}
+{%- endif -%}
+
+{% if has_profile_image or has_social %}
+  <div class="cv-map-grid">
+    <!-- LEFT: original table (unchanged logic, only loop source changed to items) -->
+    <div class="cv-map-left">
+      <table class="table table-cv table-sm table-borderless table-responsive">
+        {% for content in items %}
+          <tr>
+            <td class="p-1 pr-2 font-weight-bold">
+              <b>{{ content.name }}</b>
+            </td>
+
+            {% if content.value %}
+              <td class="p-1 pl-2 font-weight-light text">{{ content.value }}</td>
+            {% endif %}
+
+            {% if content.links %}
+              <td class="p-1 pl-2 font-weight-light text">
+                <div class="container-pdf">
+                  {% for item in content.links %}
+                    {% if item.link %}
+                      <div class="container-link-button">
+                        {% if item.name %}
+                          <a href="{{ item.link }}" target="_blank" class="btncv z-depth-0">{{ item.name }}</a>
+                        {% else %}
+                          <a href="{{ item.link }}" target="_blank" class="btncv z-depth-0">doc</a>
+                        {% endif %}
+                      </div>
+                    {% endif %}
+                  {% endfor %}
                 </div>
-              {% endif %}
-            {% endfor %}
-          </div>
-        </td>
+              </td>
+            {% endif %}
+          </tr>
+        {% endfor %}
+      </table>
+    </div>
+
+    <!-- RIGHT: profile image + social icons -->
+    <div class="cv-map-right">
+      {% if has_profile_image %}
+        {%- assign img_class = 'cv-profile-img z-depth-1' -%}
+        {%- if sec.profile_image_circular -%}
+          {%- assign img_class = img_class | append: ' rounded-circle' -%}
+        {%- else -%}
+          {%- assign img_class = img_class | append: ' rounded' -%}
+        {%- endif -%}
+
+        <img
+          loading="eager"
+          class="{{ img_class }}"
+          src="{{ sec.profile_image | prepend: 'assets/img/' | relative_url }}"
+          alt="{{ sec.profile_image_alt | default: 'Profile photo' }}"
+        >
       {% endif %}
-    </tr>
-  {% endfor %}
-</table>
+
+      {% if has_social %}
+        <div class="cv-social">
+          {% for s in sec.social %}
+            {% if s.url and s.icon %}
+              <a
+                class="cv-social-link"
+                href="{{ s.url }}"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="{{ s.title | default: 'social link' }}"
+                data-tooltip="{{ s.title | default: '' | escape }}"
+              >
+                <i class="{{ s.icon }}"></i>
+              </a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+
+{% else %}
+  <!-- fallback: original behavior -->
+  <table class="table table-cv table-sm table-borderless table-responsive">
+    {% for content in items %}
+      <tr>
+        <td class="p-1 pr-2 font-weight-bold">
+          <b>{{ content.name }}</b>
+        </td>
+        {% if content.value %}
+          <td class="p-1 pl-2 font-weight-light text">{{ content.value }}</td>
+        {% endif %}
+        {% if content.links %}
+          <td class="p-1 pl-2 font-weight-light text">
+            <div class="container-pdf">
+              {% for item in content.links %}
+                {% if item.link %}
+                  <div class="container-link-button">
+                    {% if item.name %}
+                      <a href="{{ item.link }}" target="_blank" class="btncv z-depth-0">{{ item.name }}</a>
+                    {% else %}
+                      <a href="{{ item.link }}" target="_blank" class="btncv z-depth-0">doc</a>
+                    {% endif %}
+                  </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </td>
+        {% endif %}
+      </tr>
+    {% endfor %}
+  </table>
+{% endif %}
