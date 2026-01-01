@@ -86,15 +86,13 @@
 
         
 - title: Services
-  type: time_table
+  type: nested-list
   contents:
     - title: Chair
-      - items:
-        - title: Session
+      - items: Session
         - PACT
     - title: Committee
-      - items:
-        - title: External Review
+      - items: External Review
         - USENIX ATC
     - title: Reviewer
       - items:
