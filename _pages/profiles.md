@@ -31,7 +31,7 @@ profiles:
         label: "GitHub"
       - icon: "fa-brands fa-linkedin"
         url: "https://www.linkedin.com/in/seminlim"
-        label: "GitHub"
+        label: "LinkedIn"
         
   - name: "Hunjune Choo"
     role: "Undergraduate"
