@@ -10,20 +10,18 @@
       value: Kookmin University
     - name: Languages
       value: English, Korean
-    - name: Contact
-      icon_lines: 
-      - label: Email
-        url: "seminl1@kookmin.ac.kr"
-        icon: "fa-solid fa-envelope"
-      - label: Google Scholar
-        url: "https://scholar.google.com/citations?user=xZ_EVKEAAAAJ&hl"
-        icon: "ai ai-google-scholar"
-      - label: GitHub
-        url: "https://github.com/SeMinLim"
-        icon: "fa-brands fa-github"
-      - label: LinkedIn
-        url: "https://www.linkedin.com/in/seminlim"
-        icon: "fa-brands fa-linkedin"
+    - name: Email
+      url: "seminl1@kookmin.ac.kr"
+      icon: "fa-solid fa-envelope"
+    - name: Google Scholar
+      url: "https://scholar.google.com/citations?user=xZ_EVKEAAAAJ&hl"
+      icon: "ai ai-google-scholar"
+    - name: GitHub
+      url: "https://github.com/SeMinLim"
+      icon: "fa-brands fa-github"
+    - name: LinkedIn
+      url: "https://www.linkedin.com/in/seminlim"
+      icon: "fa-brands fa-linkedin"
 
 
 - title: Experience
