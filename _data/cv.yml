@@ -18,52 +18,59 @@
       year: 2025.09 - Current
     - title: Research Scholar
       institution: Semiconductor Research Corporation (SRC)
+      location: NC, US
       year: 2023.01 - 2025.06
     - title: Graduate Student Researcher
       institution: University of California, Irvine
+      location: CA, US
       year: 2020.09 - 2025.06
     - title: Visiting Researcher
       institution: Korea University
+      location: Seoul, South Korea
       year: 2019.11 - 2020.08
     - title: Researcher
       institution: Korea University Research & Business Foundation
+      location: Seoul, South Korea
       year: 2019.04 - 2019.10
     - title: Graduate Research Assistant
       institution: Korea University
+      location: Seoul, South Korea
       year: 2017.03 - 2019.02
 
 
 - title: Research Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Application-driven, cross-layer system architectural innovations considering emerging accelerators and their real-world implementations
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
+        - System Architecture
+        - Hardware Accelerator
+        - Software-Hardware Co-Design
+        - Memory or Storage-Centric Processing
+
 
 - title: Education
   type: time_table
   contents:
     - title: PhD
       institution: University of California, Irvine
+      department: Computer Science
+      location: CA, US
       year: 2025
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+        - Advisor: Prof. Sang-Woo Jun
+        - Committee: Prof. Sang-Woo Jun, Prof. Nikil Dutt, and Prof. Hyoukjun Kwon
+        - Thesis Title: Application-Driven Cross-Layer Optimizations for CPU-FPGA Heterogeneous Systems
+    - title: MS
+      institution: Korea University
+      department: Electronics Engineering
+      location: Seoul, South Korea
+      year: 2019
+    - title: BS
+      institution: Korea University
+      department: Electronics Engineering
+      location: Seoul, South Korea
+      year: 2017
         
 - title: Open Source Projects
   type: time_table
