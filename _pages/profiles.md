@@ -1,6 +1,6 @@
 ---
 layout: profiles
-permalink: /people/
+permalink: /members/
 title: Members
 description:
 nav: true
@@ -48,33 +48,48 @@ profiles:
         url: "https://www.linkedin.com/in/hunjune-choo"
         label: "GitHub"
 
-  - name: "Sang-Joon Park"
+  - name: "Sangjun Park"
     role: "Undergraduate"
     image: "SANGJOON.jpg"
     image_circular: true
     socials:
       - icon: "fa-solid fa-envelope"
-        url: "greenstar@kookmin.ac.kr"
+        url: "poiki123@kookmin.ac.kr"
         label: "Email"
       - icon: "fa-brands fa-github"
-        url: "https://github.com/greenstar1151"
+        url: "https://github.com/SangJun-KOR"
         label: "GitHub"
       - icon: "fa-brands fa-linkedin"
-        url: "https://www.linkedin.com/in/hunjune-choo"
+        url: "https://www.linkedin.com/in/sangjun-park-0308963a3"
         label: "GitHub"
 
-  - name: "Seo-Young Lee"
+  - name: "Seoyoung Lee"
     role: "Undergraduate"
     image: "SEOYOUNG.jpg"
     image_circular: true
     socials:
       - icon: "fa-solid fa-envelope"
-        url: "greenstar@kookmin.ac.kr"
+        url: "rabbit@kookmin.ac.kr"
         label: "Email"
       - icon: "fa-brands fa-github"
-        url: "https://github.com/greenstar1151"
+        url: "https://github.com/dakdirano"
         label: "GitHub"
       - icon: "fa-brands fa-linkedin"
-        url: "https://www.linkedin.com/in/hunjune-choo"
+        url: "https://www.linkedin.com/in/seoyoung-lee-a868a93a3"
+        label: "GitHub"
+
+  - name: "Sion Lee"
+    role: "Undergraduate"
+    image: "SION.jpg"
+    image_circular: true
+    socials:
+      - icon: "fa-solid fa-envelope"
+        url: "zion0815@kookmin.ac.kr"
+        label: "Email"
+      - icon: "fa-brands fa-github"
+        url: "https://github.com/zoinyourzion"
+        label: "GitHub"
+      - icon: "fa-brands fa-linkedin"
+        url: "https://www.linkedin.com/in/zion0815"
         label: "GitHub"
 ---
