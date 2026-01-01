@@ -3,19 +3,6 @@
   profile_image: Se-Min_Lim.jpg
   profile_image_circular: false
   profile_image_alt: "Professor Photo"
-  socials:
-    - icon: "fa-solid fa-envelope"
-      url: "seminl1@kookmin.ac.kr"
-      label: "Email"
-    - icon: "ai ai-google-scholar"
-      url: "https://scholar.google.com/citations?user=xZ_EVKEAAAAJ&hl"
-      label: "Google Scholar"
-    - icon: "fa-brands fa-github"
-      url: "https://github.com/SeMinLim"
-      label: "GitHub"
-    - icon: "fa-brands fa-linkedin"
-      url: "https://www.linkedin.com/in/seminlim"
-      label: "LinkedIn"
   contents:
     - name: Full Name
       value: Se-Min Ryan Lim
@@ -23,6 +10,20 @@
       value: Kookmin University
     - name: Languages
       value: English, Korean
+    - name: Contact
+      icon_lines: 
+      - label: Email
+        url: "seminl1@kookmin.ac.kr"
+        icon: "fa-solid fa-envelope"
+      - label: Google Scholar
+        url: "https://scholar.google.com/citations?user=xZ_EVKEAAAAJ&hl"
+        icon: "ai ai-google-scholar"
+      - label: GitHub
+        url: "https://github.com/SeMinLim"
+        icon: "fa-brands fa-github"
+      - label: LinkedIn
+        url: "https://www.linkedin.com/in/seminlim"
+        icon: "fa-brands fa-linkedin"
 
 
 - title: Experience
