@@ -82,14 +82,14 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
-          description: "",
-          section: "News",},{id: "news-sata-lab-s-homepage-has-been-officially-launched",
+            },},{id: "news-sata-lab-s-homepage-has-been-officially-launched",
           title: 'SATA Lab’s homepage has been officially launched!',
           description: "",
           section: "News",},{id: "news-hunjune-and-sangjun-joined-our-lab-as-undergraduate-interns-welcome",
           title: 'Hunjune and Sangjun joined our lab as undergraduate interns. Welcome!',
+          description: "",
+          section: "News",},{id: "news-seoyoung-joined-our-lab-as-an-undergraduate-intern-welcome",
+          title: 'Seoyoung joined our lab as an undergraduate intern. Welcome!',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
