@@ -86,12 +86,13 @@
 
         
 - title: Services
-  type: nested-list
+  type: time_table
   contents:
     - title: Chair
-      - items:
-        - Session
-        - items:
+      year: 2025 - Current
+      description:
+      - title: Session
+        contents: 
           - PACT
 
 
