@@ -1,6 +1,6 @@
 ---
 layout: cv
-permalink: /cv/
+permalink: /professor/
 title: Professor
 nav: true
 nav_order: 2
