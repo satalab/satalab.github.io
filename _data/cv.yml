@@ -88,9 +88,19 @@
 - title: Services
   type: time_table
   contents:
-    - title: Session Chair
-    - items: 
-      - PACT
+    - title: Chair
+      - items:
+        - title: Session
+        - PACT
+    - title: Committee
+      - items:
+        - title: External Review
+        - USENIX ATC
+    - title: Reviewer
+      - items:
+        - Journal of Big Data
+        - IEEE Systems Journal
+
 
 - title: Honors and Awards
   type: time_table
