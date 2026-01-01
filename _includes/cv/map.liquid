@@ -14,7 +14,7 @@
 
 {% if has_profile_image or has_social %}
   <div class="cv-map-grid">
-    <!-- LEFT: original table (unchanged logic, only loop source changed to items) -->
+    <!-- LEFT: table -->
     <div class="cv-map-left">
       <table class="table table-cv table-sm table-borderless table-responsive">
         {% for content in items %}
@@ -23,8 +23,57 @@
               <b>{{ content.name }}</b>
             </td>
 
-            {% if content.value %}
-              <td class="p-1 pl-2 font-weight-light text">{{ content.value }}</td>
+            {% if content.value or content.icon_lines or content.icons %}
+              <td class="p-1 pl-2 font-weight-light text">
+
+                {% if content.value %}
+                  {{ content.value }}
+                {% endif %}
+
+                {% if content.icon_lines %}
+                  <div class="cv-icon-lines {% if content.value %}mt-2{% endif %}">
+                    {% for it in content.icon_lines %}
+                      {%- assign href = it.url | default: it.link -%}
+                      {%- assign label = it.label | default: it.title | default: it.name -%}
+                      {% if href and it.icon %}
+                        <a
+                          class="cv-icon-line-link"
+                          href="{{ href }}"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="{{ label | default: 'link' }}"
+                          data-tooltip="{{ label | default: '' | escape }}"
+                        >
+                          <span class="cv-icon-line-text">{{ label }}</span>
+                          <i class="{{ it.icon }}"></i>
+                        </a>
+                      {% endif %}
+                    {% endfor %}
+                  </div>
+                {% endif %}
+
+                {% if content.icons %}
+                  <div class="cv-icon-row {% if content.value or content.icon_lines %}mt-2{% endif %}">
+                    {% for icon_item in content.icons %}
+                      {%- assign href2 = icon_item.url | default: icon_item.link -%}
+                      {%- assign label2 = icon_item.title | default: icon_item.label | default: icon_item.name -%}
+                      {% if href2 and icon_item.icon %}
+                        <a
+                          class="cv-icon-link"
+                          href="{{ href2 }}"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="{{ label2 | default: 'social link' }}"
+                          data-tooltip="{{ label2 | default: '' | escape }}"
+                        >
+                          <i class="{{ icon_item.icon }}"></i>
+                        </a>
+                      {% endif %}
+                    {% endfor %}
+                  </div>
+                {% endif %}
+
+              </td>
             {% endif %}
 
             {% if content.links %}
@@ -49,7 +98,7 @@
       </table>
     </div>
 
-    <!-- RIGHT: profile image + social icons -->
+    <!-- RIGHT: profile image + section-level social icons -->
     <div class="cv-map-right">
       {% if has_profile_image %}
         {%- assign img_class = 'cv-profile-img z-depth-1' -%}
@@ -89,16 +138,67 @@
   </div>
 
 {% else %}
-  <!-- fallback: original behavior -->
+  <!-- fallback: original behavior (but icon_lines/icons also supported) -->
   <table class="table table-cv table-sm table-borderless table-responsive">
     {% for content in items %}
       <tr>
         <td class="p-1 pr-2 font-weight-bold">
           <b>{{ content.name }}</b>
         </td>
-        {% if content.value %}
-          <td class="p-1 pl-2 font-weight-light text">{{ content.value }}</td>
+
+        {% if content.value or content.icon_lines or content.icons %}
+          <td class="p-1 pl-2 font-weight-light text">
+
+            {% if content.value %}
+              {{ content.value }}
+            {% endif %}
+
+            {% if content.icon_lines %}
+              <div class="cv-icon-lines {% if content.value %}mt-2{% endif %}">
+                {% for it in content.icon_lines %}
+                  {%- assign href = it.url | default: it.link -%}
+                  {%- assign label = it.label | default: it.title | default: it.name -%}
+                  {% if href and it.icon %}
+                    <a
+                      class="cv-icon-line-link"
+                      href="{{ href }}"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="{{ label | default: 'link' }}"
+                      data-tooltip="{{ label | default: '' | escape }}"
+                    >
+                      <span class="cv-icon-line-text">{{ label }}</span>
+                      <i class="{{ it.icon }}"></i>
+                    </a>
+                  {% endif %}
+                {% endfor %}
+              </div>
+            {% endif %}
+
+            {% if content.icons %}
+              <div class="cv-icon-row {% if content.value or content.icon_lines %}mt-2{% endif %}">
+                {% for icon_item in content.icons %}
+                  {%- assign href2 = icon_item.url | default: icon_item.link -%}
+                  {%- assign label2 = icon_item.title | default: icon_item.label | default: icon_item.name -%}
+                  {% if href2 and icon_item.icon %}
+                    <a
+                      class="cv-icon-link"
+                      href="{{ href2 }}"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="{{ label2 | default: 'social link' }}"
+                      data-tooltip="{{ label2 | default: '' | escape }}"
+                    >
+                      <i class="{{ icon_item.icon }}"></i>
+                    </a>
+                  {% endif %}
+                {% endfor %}
+              </div>
+            {% endif %}
+
+          </td>
         {% endif %}
+
         {% if content.links %}
           <td class="p-1 pl-2 font-weight-light text">
             <div class="container-pdf">
