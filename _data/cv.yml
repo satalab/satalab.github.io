@@ -29,7 +29,8 @@
   type: time_table
   contents:
     - title: Assistant Professor
-      institution: College of Computer Science, Kookmin University University
+      institution: Kookmin University University
+      department: College of Computer Science
       location: Seoul, South Korea
       year: 2025.09 - Current
     - title: Research Scholar
@@ -68,21 +69,21 @@
 - title: Education
   type: time_table
   contents:
-    - title: PhD
+    - title: Doctor of Philosophy
       institution: University of California, Irvine
       department: Computer Science
       location: CA, US
-      year: 2025
-    - title: MS
+      year: 2020 - 2025
+    - title: Master of Engineering
       institution: Korea University
       department: Electronics Engineering
       location: Seoul, South Korea
-      year: 2019
-    - title: BS
+      year: 2017 - 2019
+    - title: Bachelor of Engineering
       institution: Korea University
       department: Electronics Engineering
       location: Seoul, South Korea
-      year: 2017
+      year: 2011 - 2017
 
         
 - title: Services
@@ -94,21 +95,35 @@
       - title: Session
         contents: 
           - PACT
+    - title: Committee
+      year: 2024 - Current
+      description:
+      - title: External Review
+        contents: 
+          - USENIX ATC
+    - title: Reviewer
+      year: 2021 - Current
+      description:
+      - IEEE Systems Journal
 
+
+- title: Talks
+  type: time_table
+  contents:
+    - title: "Addressing the Data Movement Overhead in Genomics Accelerators"
+      year: 2025
+      institution: Korea Software Congress 
+    - title: "Beyond Moore, Beyond Memory: System Architectures for the Next Decade of Genomics"
+      year: 2026
+      institution: Computer System Society Conference
+      
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
-      items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
-
-
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - title: Best Poster Award
+      department: Korea Computer Congress
+      year: 2018
+    - title: Best Research of Undergraduate Student Award
+      department: Korea University
+      year: 2016
