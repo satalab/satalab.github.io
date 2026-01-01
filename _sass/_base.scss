@@ -498,6 +498,44 @@ ul.task-list input[type="checkbox"] {
 }
 
 
+/* (contents 안) 줄바꿈 링크: "GitHub [icon]" 형태 */
+.cv-icon-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.cv-icon-line-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  width: fit-content;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+
+  text-decoration: none;
+  color: var(--global-text-color, #333);
+  opacity: 0.92;
+
+  transition: transform 0.15s ease, opacity 0.15s ease, color 0.15s ease, background-color 0.15s ease;
+}
+
+.cv-icon-line-link:hover,
+.cv-icon-line-link:focus-visible {
+  opacity: 1;
+  transform: translateY(-1px);
+  color: var(--global-theme-color, #2a7ae2);
+  background-color: rgba(42, 122, 226, 0.12);
+  outline: none;
+}
+
+.cv-icon-line-text {
+  font-size: 0.95rem;
+}
+
+
 // Navbar customization
 
 .navbar {
