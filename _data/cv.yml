@@ -1,5 +1,21 @@
 - title: General Information
   type: map
+  profile_image: Se-Min_Lim.jpg
+  profile_image_circular: false
+  profile_image_alt: "Professor Photo"
+  socials:
+    - icon: "fa-solid fa-envelope"
+      url: "seminl1@kookmin.ac.kr"
+      label: "Email"
+    - icon: "ai ai-google-scholar"
+      url: "https://scholar.google.com/citations?user=xZ_EVKEAAAAJ&hl"
+      label: "Google Scholar"
+    - icon: "fa-brands fa-github"
+      url: "https://github.com/SeMinLim"
+      label: "GitHub"
+    - icon: "fa-brands fa-linkedin"
+      url: "https://www.linkedin.com/in/seminlim"
+      label: "GitHub"
   contents:
     - name: Full Name
       value: Se-Min Ryan Lim
@@ -57,10 +73,6 @@
       department: Computer Science
       location: CA, US
       year: 2025
-      description:
-        - Advisor: Prof. Sang-Woo Jun
-        - Committee: Prof. Sang-Woo Jun, Prof. Nikil Dutt, and Prof. Hyoukjun Kwon
-        - Thesis Title: Application-Driven Cross-Layer Optimizations for CPU-FPGA Heterogeneous Systems
     - title: MS
       institution: Korea University
       department: Electronics Engineering
@@ -71,13 +83,14 @@
       department: Electronics Engineering
       location: Seoul, South Korea
       year: 2017
+
         
-- title: Open Source Projects
+- title: Services
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: Session Chair
+    - items: 
+      - PACT
 
 - title: Honors and Awards
   type: time_table
