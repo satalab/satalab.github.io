@@ -121,8 +121,8 @@
   type: time_table
   contents:
     - title: Best Poster Award
-      department: Korea Computer Congress
+      institution: Korea Computer Congress
       year: 2018
     - title: Best Research of Undergraduate Student Award
-      department: Korea University
+      institution: Korea University
       year: 2016
