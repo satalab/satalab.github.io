@@ -536,6 +536,46 @@ ul.task-list input[type="checkbox"] {
 }
 
 
+/* ===== Fix spacing mismatch in General Information table ===== */
+
+/* 1) 모든 셀을 동일한 수직 정렬/패딩으로 맞춤 */
+.cv-map-left .table-cv td {
+  vertical-align: middle;
+  padding-top: 0.25rem !important;
+  padding-bottom: 0.25rem !important;
+}
+
+/* 2) "표 안" 아이콘 링크는 큰 원형 버튼 스타일을 제거하고 컴팩트하게 */
+.cv-map-left .cv-map-inline-icon {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+
+  width: auto !important;
+  height: auto !important;
+  padding: 0 !important;
+  margin: 0 !important;
+
+  border-radius: 0 !important;
+  background: transparent !important;
+
+  /* hover 시 행 높이가 튀는 것 방지 */
+  transform: none !important;
+}
+
+/* 3) 아이콘 자체 line-height로 미세 높이 차이 제거 */
+.cv-map-left .cv-map-inline-icon i {
+  line-height: 1 !important;
+  vertical-align: middle;
+}
+
+/* (선택) 표 안 아이콘 hover는 색만 바뀌게 */
+.cv-map-left .cv-map-inline-icon:hover,
+.cv-map-left .cv-map-inline-icon:focus-visible {
+  background: transparent !important;
+  transform: none !important;
+}
+
 // Navbar customization
 
 .navbar {
