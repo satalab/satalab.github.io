@@ -89,15 +89,9 @@
   type: nested-list
   contents:
     - title: Chair
-      - items: Session
-        - PACT
-    - title: Committee
-      - items: External Review
-        - USENIX ATC
-    - title: Reviewer
       - items:
-        - Journal of Big Data
-        - IEEE Systems Journal
+        - Session
+          - PACT
 
 
 - title: Honors and Awards
