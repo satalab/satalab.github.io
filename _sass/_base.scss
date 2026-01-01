@@ -391,6 +391,113 @@ ul.task-list input[type="checkbox"] {
   transform: translateX(-50%) translateY(0);
 }
 
+
+/* General Info map: left table + right profile */
+.cv-map-grid {
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .cv-map-grid {
+    grid-template-columns: 1fr;
+  }
+  .cv-map-right {
+    margin-top: 0.75rem;
+  }
+}
+
+.cv-map-right {
+  text-align: center;
+}
+
+/* lock image size (prevents "huge" image when layout expands) */
+.cv-profile-img {
+  width: 180px !important;
+  height: 180px !important;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+/* social icons */
+.cv-social {
+  margin-top: 0.85rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.cv-social-link {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+
+  color: var(--global-text-color, #333);
+  opacity: 0.9;
+  transition: transform 0.15s ease, opacity 0.15s ease, color 0.15s ease, background-color 0.15s ease;
+}
+
+.cv-social-link:hover,
+.cv-social-link:focus-visible {
+  opacity: 1;
+  transform: translateY(-1px);
+  color: var(--global-theme-color, #2a7ae2);
+  background-color: rgba(42, 122, 226, 0.12);
+  outline: none;
+}
+
+/* tooltip */
+.cv-social-link[data-tooltip]:after {
+  content: attr(data-tooltip);
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 10px);
+  transform: translateX(-50%) translateY(2px);
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: rgba(0,0,0,0.85);
+  color: #fff;
+  font-size: 0.78rem;
+  line-height: 1;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  z-index: 10;
+}
+
+.cv-social-link[data-tooltip]:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 4px);
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: rgba(0,0,0,0.85);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease;
+  z-index: 10;
+}
+
+.cv-social-link:hover:after,
+.cv-social-link:focus-visible:after,
+.cv-social-link:hover:before,
+.cv-social-link:focus-visible:before {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+
 // Navbar customization
 
 .navbar {
