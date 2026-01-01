@@ -91,6 +91,7 @@
     - title: Chair
       - items:
         - Session
+        - items:
           - PACT
 
 
