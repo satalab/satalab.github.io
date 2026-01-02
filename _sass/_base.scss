@@ -576,6 +576,95 @@ ul.task-list input[type="checkbox"] {
   transform: none !important;
 }
 
+
+/* ===== Supporters logos (Home/About page) ===== */
+.lab-supporters {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.lab-supporters-title {
+  margin-bottom: 1rem;
+}
+
+/* 가운데 정렬 + 줄바꿈 */
+.lab-supporters-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* ✅ 항상 가운데 */
+  align-items: stretch;
+  gap: 1rem 1.25rem;
+}
+
+/* ✅ 데스크탑: 한 줄 최대 5개 */
+.lab-supporter-item {
+  flex: 0 0 20%;
+  max-width: 20%;
+  padding: 0.25rem;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+}
+
+/* ✅ 흰 배경 카드 */
+.lab-supporter-card {
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 14px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+
+  width: 100%;
+  min-height: 92px;              /* 카드 높이 통일(중요) */
+  padding: 0.75rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* hover 시 살짝 떠오르게 */
+.lab-supporter-item:hover .lab-supporter-card {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.10);
+}
+
+/* ✅ 로고 크기 통일 (height 기준) */
+.lab-supporter-logo {
+  height: 52px;            /* 여기만 바꾸면 전체 로고 크기 조절 */
+  width: auto;
+  max-width: 160px;        /* 가로로 너무 길어지는 로고 제한 */
+  object-fit: contain;
+  display: block;
+}
+
+/* 반응형: 화면 좁아지면 3개/줄 → 2개/줄 */
+@media (max-width: 992px) {
+  .lab-supporter-item {
+    flex-basis: 33.333%;
+    max-width: 33.333%;
+  }
+}
+
+@media (max-width: 576px) {
+  .lab-supporter-item {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+  .lab-supporter-logo {
+    height: 46px;
+    max-width: 150px;
+  }
+}
+
+/* 다크모드에서도 "흰 카드" 유지 (원하신 컨셉) */
+html[data-theme="dark"] .lab-supporter-card {
+  background: #fff;
+  border-color: rgba(255,255,255,0.10); /* 테두리 살짝 */
+}
+
+
 // Navbar customization
 
 .navbar {
