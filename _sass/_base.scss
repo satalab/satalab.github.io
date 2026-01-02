@@ -3,7 +3,6 @@
  ******************************************************************************/
 
 // Typography
-
 p,
 h1,
 h2,
@@ -135,8 +134,8 @@ blockquote {
   }
 }
 
-// Checklist
 
+// Checklist
 ul.task-list {
   list-style-type: none; /* Remove bullets from all levels */
 }
@@ -151,15 +150,15 @@ ul.task-list input[type="checkbox"] {
   vertical-align: middle;
 }
 
-// Math
 
+// Math
 .equation {
   margin-bottom: 1rem;
   text-align: center;
 }
 
-// Caption
 
+// Caption
 .caption {
   font-size: 0.875rem;
   margin-top: 0.75rem;
@@ -167,8 +166,8 @@ ul.task-list input[type="checkbox"] {
   text-align: center;
 }
 
-// Card
 
+// Card
 .card {
   background-color: var(--global-card-bg-color);
 
@@ -186,15 +185,15 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
-// Citation
 
+// Citation
 .citation,
 .citation-number {
   color: var(--global-theme-color);
 }
 
-// Profile
 
+// Profile
 .profile {
   width: 80%;
 
@@ -248,7 +247,6 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
-/* ===== Members (People) Sections ===== */
 .members-section {
   margin-top: 2.5rem;
 }
@@ -257,7 +255,6 @@ ul.task-list input[type="checkbox"] {
   margin-bottom: 1rem;
 }
 
-/* ===== 4-column grid (desktop) ===== */
 .members-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr)); /* 한 줄 4명 */
@@ -275,7 +272,6 @@ ul.task-list input[type="checkbox"] {
   .members-grid { grid-template-columns: repeat(1, 1fr); }
 }
 
-/* ===== Member card ===== */
 .member-card {
   text-align: center;
   padding: 1.25rem 1rem;
@@ -288,7 +284,6 @@ ul.task-list input[type="checkbox"] {
   margin: 0 0 0.9rem 0; /* figure.liquid 기본 margin 제거 */
 }
 
-/* picture size */
 .member-photo {
   width: 140px;
   height: 140px;
@@ -297,7 +292,6 @@ ul.task-list input[type="checkbox"] {
   margin: 0 auto;
 }
 
-/* ===== Name ===== */
 .member-name {
   font-weight: 600;
   line-height: 1.2;
@@ -313,7 +307,6 @@ ul.task-list input[type="checkbox"] {
   color: var(--global-theme-color, #2a7ae2);
 }
 
-/* ===== Social icons row ===== */
 .member-social {
   margin-top: 0.7rem;
   display: flex;
@@ -321,7 +314,6 @@ ul.task-list input[type="checkbox"] {
   gap: 0.75rem;
 }
 
-/* Icon Button */
 .member-social-link {
   position: relative;
   display: inline-flex;
@@ -344,7 +336,6 @@ ul.task-list input[type="checkbox"] {
   outline: none;
 }
 
-/* ===== Pretty tooltip (pure CSS) ===== */
 .member-social-link[data-tooltip]:after {
   content: attr(data-tooltip);
   position: absolute;
@@ -392,7 +383,7 @@ ul.task-list input[type="checkbox"] {
 }
 
 
-/* General Info map: left table + right profile */
+// Professor
 .cv-map-grid {
   display: grid;
   grid-template-columns: 1fr 220px;
@@ -413,7 +404,6 @@ ul.task-list input[type="checkbox"] {
   text-align: center;
 }
 
-/* lock image size (prevents "huge" image when layout expands) */
 .cv-profile-img {
   width: 180px !important;
   height: 180px !important;
@@ -422,7 +412,6 @@ ul.task-list input[type="checkbox"] {
   margin: 0 auto;
 }
 
-/* social icons */
 .cv-social {
   margin-top: 0.85rem;
   display: flex;
@@ -455,7 +444,6 @@ ul.task-list input[type="checkbox"] {
   outline: none;
 }
 
-/* tooltip */
 .cv-social-link[data-tooltip]:after {
   content: attr(data-tooltip);
   position: absolute;
@@ -497,8 +485,6 @@ ul.task-list input[type="checkbox"] {
   transform: translateX(-50%) translateY(0);
 }
 
-
-/* (contents 안) 줄바꿈 링크: "GitHub [icon]" 형태 */
 .cv-icon-lines {
   display: flex;
   flex-direction: column;
@@ -535,17 +521,12 @@ ul.task-list input[type="checkbox"] {
   font-size: 0.95rem;
 }
 
-
-/* ===== Fix spacing mismatch in General Information table ===== */
-
-/* 1) 모든 셀을 동일한 수직 정렬/패딩으로 맞춤 */
 .cv-map-left .table-cv td {
   vertical-align: middle;
   padding-top: 0.25rem !important;
   padding-bottom: 0.25rem !important;
 }
 
-/* 2) "표 안" 아이콘 링크는 큰 원형 버튼 스타일을 제거하고 컴팩트하게 */
 .cv-map-left .cv-map-inline-icon {
   display: inline-flex !important;
   align-items: center;
@@ -559,17 +540,14 @@ ul.task-list input[type="checkbox"] {
   border-radius: 0 !important;
   background: transparent !important;
 
-  /* hover 시 행 높이가 튀는 것 방지 */
   transform: none !important;
 }
 
-/* 3) 아이콘 자체 line-height로 미세 높이 차이 제거 */
 .cv-map-left .cv-map-inline-icon i {
   line-height: 1 !important;
   vertical-align: middle;
 }
 
-/* (선택) 표 안 아이콘 hover는 색만 바뀌게 */
 .cv-map-left .cv-map-inline-icon:hover,
 .cv-map-left .cv-map-inline-icon:focus-visible {
   background: transparent !important;
@@ -577,7 +555,7 @@ ul.task-list input[type="checkbox"] {
 }
 
 
-/* ===== Supporters logos (Home/About page) ===== */
+// Lab Supporters
 .lab-supporters {
   margin-top: 2.5rem;
   text-align: center;
@@ -587,16 +565,14 @@ ul.task-list input[type="checkbox"] {
   margin-bottom: 1rem;
 }
 
-/* 가운데 정렬 + 줄바꿈 */
 .lab-supporters-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* ✅ 항상 가운데 */
+  justify-content: center;
   align-items: stretch;
   gap: 1rem 1.25rem;
 }
 
-/* ✅ 데스크탑: 한 줄 최대 5개 */
 .lab-supporter-item {
   flex: 0 0 20%;
   max-width: 20%;
@@ -606,7 +582,6 @@ ul.task-list input[type="checkbox"] {
   display: flex;
 }
 
-/* ✅ 흰 배경 카드 */
 .lab-supporter-card {
   background: #fff;
   border: 1px solid rgba(0,0,0,0.08);
@@ -614,7 +589,7 @@ ul.task-list input[type="checkbox"] {
   box-shadow: 0 2px 10px rgba(0,0,0,0.06);
 
   width: 100%;
-  min-height: 92px;              /* 카드 높이 통일(중요) */
+  min-height: 92px;
   padding: 0.75rem;
 
   display: flex;
@@ -624,29 +599,25 @@ ul.task-list input[type="checkbox"] {
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-/* hover 시 살짝 떠오르게 */
 .lab-supporter-item:hover .lab-supporter-card {
   transform: translateY(-2px);
   box-shadow: 0 6px 18px rgba(0,0,0,0.10);
 }
 
-/* ✅ 로고 크기 통일 (height 기준) */
 .lab-supporter-logo {
-  height: 52px;            /* 여기만 바꾸면 전체 로고 크기 조절 */
+  height: 70px; /* logo size regulation */
   width: auto;
-  max-width: 160px;        /* 가로로 너무 길어지는 로고 제한 */
+  max-width: 160px;
   object-fit: contain;
   display: block;
 }
 
-/* 반응형: 화면 좁아지면 3개/줄 → 2개/줄 */
 @media (max-width: 992px) {
   .lab-supporter-item {
     flex-basis: 33.333%;
     max-width: 33.333%;
   }
 }
-
 @media (max-width: 576px) {
   .lab-supporter-item {
     flex-basis: 50%;
@@ -658,15 +629,52 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
-/* 다크모드에서도 "흰 카드" 유지 (원하신 컨셉) */
 html[data-theme="dark"] .lab-supporter-card {
   background: #fff;
-  border-color: rgba(255,255,255,0.10); /* 테두리 살짝 */
+  border-color: rgba(255,255,255,0.10);
+}
+
+
+// Photo at News Section
+.inline-photo-row {
+  --photo-size: 220px;
+  --gap: 1.25rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--gap);
+
+  max-width: min(100%, calc(3 * var(--photo-size) + 2 * var(--gap)));
+  margin: 1rem auto 0;
+}
+
+.inline-photo-row .inline-photo-item {
+  flex: 0 0 var(--photo-size);
+  display: flex;
+  justify-content: center;
+}
+
+.inline-photo-row figure {
+  margin: 0;
+}
+
+.inline-photo-row .inline-photo-img {
+  width: var(--photo-size) !important;
+  height: var(--photo-size) !important;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 576px) {
+  .inline-photo-row {
+    --photo-size: 170px;
+    --gap: 1rem;
+  }
 }
 
 
 // Navbar customization
-
 .navbar {
   box-shadow: none;
   border-bottom: 1px solid var(--global-divider-color);
@@ -830,81 +838,6 @@ html[data-theme="dark"] .lab-supporter-card {
   }
 }
 
-// Social (bottom)
-
-.social {
-  text-align: center;
-
-  .contact-icons {
-    font-size: 4rem;
-
-    a {
-      img {
-        width: 3.2rem;
-        height: 3.2rem;
-        margin-bottom: 1rem;
-      }
-
-      svg {
-        width: 3.5rem;
-        height: 4rem;
-        margin-bottom: 0.5rem;
-
-        image {
-          width: 3.5rem;
-          height: 3.5rem;
-        }
-      }
-
-      i::before {
-        color: var(--global-text-color);
-        transition-property: all 0.2s ease-in-out;
-      }
-
-      &:hover {
-        text-decoration: none;
-
-        i::before {
-          color: var(--global-theme-color);
-        }
-      }
-    }
-  }
-
-  .contact-note {
-    font-size: 0.8rem;
-  }
-}
-
-.wechat-modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.wechat-modal > img {
-  display: block;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  width: 33%;
-  max-width: 400px;
-  transform: translate(-50%, -50%);
-}
-
-@media only screen and (max-width: 400px) {
-  .wechat-modal > img {
-    width: 100%;
-  }
-}
 
 // Footer
 footer.fixed-bottom {
@@ -939,8 +872,8 @@ footer.sticky-bottom {
   }
 }
 
-// CV
 
+// CV
 .cv {
   margin-bottom: 40px;
 
@@ -971,16 +904,8 @@ footer.sticky-bottom {
   transform: translateX(-15px) translateY(-5px);
 }
 
-// Repositories
-
-@media (min-width: 768px) {
-  .repo {
-    max-width: 50%;
-  }
-}
 
 // Blog
-
 .header-bar {
   border-bottom: 1px solid var(--global-divider-color);
   text-align: center;
@@ -1079,14 +1004,14 @@ footer.sticky-bottom {
   }
 }
 
-// diff2html - Fix for diff2html line number overflow
 
+// diff2html - Fix for diff2html line number overflow
 .d2h-diff-table {
   position: relative;
 }
 
-// Distill
 
+// Distill
 .distill {
   a:hover {
     border-bottom-color: var(--global-theme-color);
@@ -1094,8 +1019,8 @@ footer.sticky-bottom {
   }
 }
 
-// Projects
 
+// Projects
 .projects {
   a {
     text-decoration: none;
@@ -1133,8 +1058,8 @@ footer.sticky-bottom {
   }
 }
 
-// Publications
 
+// Publications
 .publications {
   margin-top: 2rem;
 
@@ -1312,6 +1237,7 @@ footer.sticky-bottom {
   }
 }
 
+
 // Rouge Color Customization
 figure.highlight {
   margin: 0 0 1rem;
@@ -1361,6 +1287,7 @@ code {
   word-wrap: break-word;
 }
 
+
 // Transitioning Themes
 html.transition,
 html.transition *,
@@ -1369,6 +1296,7 @@ html.transition *:after {
   transition: all 750ms !important;
   transition-delay: 0 !important;
 }
+
 
 // Extra Markdown style (post Customization)
 .post {
@@ -1450,6 +1378,7 @@ progress::-moz-progress-bar {
   height: inherit;
 }
 
+
 /* Copy button */
 .code-display-wrapper {
   position: relative;
@@ -1500,6 +1429,7 @@ progress::-moz-progress-bar {
   }
 }
 
+
 /* Table of Contents */
 nav[data-toggle="toc"] {
   top: 5rem;
@@ -1529,6 +1459,7 @@ nav[data-toggle="toc"] {
     }
   }
 }
+
 
 /* small screens */
 @media (max-width: 576px) {
@@ -1561,6 +1492,7 @@ nav[data-toggle="toc"] {
   }
 }
 
+
 /* Extra small screens */
 @media (max-width: 400px) {
   pre {
@@ -1580,6 +1512,7 @@ nav[data-toggle="toc"] {
     padding: 1px 3px;
   }
 }
+
 
 /* Medium screens - optimize for tablets */
 @media (min-width: 577px) and (max-width: 768px) {
@@ -1665,6 +1598,7 @@ swiper-container {
   }
 }
 
+
 // Ninja Keys
 // for more options, check https://github.com/ssleptsov/ninja-keys?tab=readme-ov-file#css-variables
 ninja-keys {
@@ -1681,6 +1615,7 @@ ninja-keys::part(ninja-input) {
 ninja-keys::part(ninja-input-wrapper) {
   background: var(--global-bg-color);
 }
+
 
 // newsletter
 .newsletter-form-container {
@@ -1795,6 +1730,7 @@ ninja-keys::part(ninja-input-wrapper) {
   }
 }
 
+
 // popover is used for annotation in bib.liquid
 .popover {
   background-color: var(--global-bg-color);
@@ -1833,6 +1769,7 @@ ninja-keys::part(ninja-input-wrapper) {
     border-bottom-color: var(--global-divider-color);
   }
 }
+
 
 // highlight-search-term
 ::highlight(search) {
