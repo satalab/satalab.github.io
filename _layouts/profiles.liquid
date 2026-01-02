@@ -62,6 +62,10 @@ layout: page
                     {%- endif -%}
                   {%- endif -%}
 
+                  {% if profile.affiliation %}
+                    <div class="member-affiliation">{{ profile.affiliation }}</div>
+                  {% endif %}
+
                   {%- if profile.socials -%}
                     <div class="member-social">
                       {%- for s in profile.socials -%}
