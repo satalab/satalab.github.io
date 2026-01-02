@@ -44,7 +44,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/projects/";
           },
-        },{id: "post-welcome-aboard-seoyoung",
+        },{id: "post-welcome-aboard-sion",
+        
+          title: "Welcome aboard, Sion!",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/news/2025/lab_5/";
+          
+        },
+      },{id: "post-welcome-aboard-seoyoung",
         
           title: "Welcome aboard, Seoyoung!",
         
