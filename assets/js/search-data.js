@@ -44,15 +44,15 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/projects/";
           },
-        },{id: "post-a-post-with-formatting-and-links",
+        },{id: "post-sata-lab-39-s-homepage-has-been-officially-launched",
         
-          title: "a post with formatting and links",
+          title: "SATA Lab&#39;s homepage has been officially launched!",
         
-        description: "march &amp; april, looking forward to summer",
+        description: "",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/news/2025/first/";
+            window.location.href = "/news/2025/1/";
           
         },
       },{id: "books-the-godfather",
