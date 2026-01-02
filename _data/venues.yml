@@ -1,9 +1,60 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+"ISCA":
+  color: "#1F77B4"  # blue
 
-"PhysRev":
-  url: https://journals.aps.org/
+"MICRO":
+  color: "#FF7F0E"  # orange
 
-"Vision":
-  color: "#009f36"
+"HPCA":
+  color: "#2CA02C"  # green
+
+"PACT":
+  color: "#D62728"  # red
+
+"DAC":
+  color: "#9467BD"  # purple
+
+"ICS":
+  color: "#8C564B"  # brown
+
+"IPDPS":
+  color: "#E377C2"  # pink
+
+"ICCAD":
+  color: "#7F7F7F"  # gray
+
+"DATE":
+  color: "#BCBD22"  # olive/yellow-green
+
+"BigData":
+  color: "#17BECF"  # cyan/teal
+
+"e-Science":
+  color: "#0B3D91"  # deep navy
+
+"ASAP":
+  color: "#00A6D6"  # bright cyan
+
+"FPL":
+  color: "#00B894"  # mint/teal-green
+
+"FPT":
+  color: "#6C5CE7"  # indigo
+
+"FPGA":
+  color: "#FD79A8"  # soft pink
+
+"FCCM":
+  color: "#E17055"  # terracotta
+
+"Sensors":
+  color: "#FDCB6E"  # warm yellow
+
+"Electronics":
+  color: "#2D3436"  # near-black (charcoal)
+
+"ICCD":
+  color: "#A29BFE"  # lavender
+
+"ASPLOS":
+  color: "#0984E3"  # vivid blue
+
