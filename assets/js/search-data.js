@@ -44,7 +44,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/projects/";
           },
-        },{id: "post-welcome-aboard-hunjune-and-sangjun",
+        },{id: "post-prof-se-min-lim-will-be-serving-on-the-session-chair-for-pact-2025",
+        
+          title: "Prof. Se-Min Lim will be serving on the session chair for PACT 2025!...",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/news/2025/lab/";
+          
+        },
+      },{id: "post-welcome-aboard-hunjune-and-sangjun",
         
           title: "Welcome aboard, Hunjune and Sangjun!",
         
