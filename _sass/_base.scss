@@ -569,26 +569,18 @@ ul.task-list input[type="checkbox"] {
   --gap-x: 1.25rem;
   --gap-y: 1rem;
 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: stretch;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: var(--gap-y) var(--gap-x);
 
-  column-gap: var(--gap-x);
-  row-gap: var(--gap-y);
+  width: 100%;
 }
 
 .lab-supporter-item {
-  flex: 0 0 calc((100% - 4 * var(--gap-x)) / 5);
-  max-width: calc((100% - 4 * var(--gap-x)) / 5);
-
-  padding: 0;
-  display: flex;
+  display: block;
+  min-width: 0;
   text-decoration: none;
   color: inherit;
-
-  min-width: 0;   
-  box-sizing: border-box; 
 }
 
 .lab-supporter-card {
@@ -598,14 +590,16 @@ ul.task-list input[type="checkbox"] {
   box-shadow: 0 2px 10px rgba(0,0,0,0.06);
 
   width: 100%;
-  height: 130px; 
-  padding: 0.25rem; 
-  box-sizing: border-box;
-  min-width: 0;
+  height: 130px;
+  padding: 0.25rem;
 
   display: flex;
   align-items: center;
   justify-content: center;
+
+  min-width: 0;
+  box-sizing: border-box;
+  overflow: hidden;
 
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
@@ -628,24 +622,27 @@ ul.task-list input[type="checkbox"] {
 }
 
 @media (max-width: 992px) {
-  .lab-supporter-item {
-    flex-basis: calc((100% - 2 * var(--gap-x)) / 3);
-    max-width: calc((100% - 2 * var(--gap-x)) / 3);
+  .lab-supporters-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-  .lab-supporter-card { height: 120px; }
+  .lab-supporter-card {
+    height: 120px;
+  }
 }
 @media (max-width: 576px) {
-  .lab-supporter-item {
-    flex-basis: calc((100% - 1 * var(--gap-x)) / 2);
-    max-width: calc((100% - 1 * var(--gap-x)) / 2);
+  .lab-supporters-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .lab-supporter-card { height: 110px; }
+  .lab-supporter-card {
+    height: 110px;
+  }
 }
 
 html[data-theme="dark"] .lab-supporter-card {
   background: #fff;
   border-color: rgba(255,255,255,0.10);
 }
+
 
 // Photo at News Section
 .inline-photo-row {
