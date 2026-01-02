@@ -58,3 +58,17 @@
 "ASPLOS":
   color: "#0984E3"  # vivid blue
 
+"USENIX ATC":
+  color: "#C44536"  # brick red
+
+"ISLPED":
+  color: "#3D5A80"  # steel blue
+
+"EuroSys":
+  color: "#2A9D8F"  # teal
+
+"HiPEAC":
+  color: "#E9C46A"  # sand / gold
+
+"PPoPP":
+  color: "#7A7F2B"  # olive
