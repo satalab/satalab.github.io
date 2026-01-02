@@ -116,9 +116,9 @@ ninja.data = [{
           section: "News",},{id: "news-sion-joined-our-lab-as-an-undergraduate-intern-welcome",
           title: 'Sion joined our lab as an undergraduate intern. Welcome!',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
+          section: "News",},{id: "projects-domain-specific-architectures",
+          title: 'Domain-Specific Architectures',
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-project-2",
