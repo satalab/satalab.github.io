@@ -14,6 +14,23 @@ latest_posts:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 5 # leave blank to include all the blog posts
+
+supporters:
+  - name: "Kookmin University"
+    logo: "emblem_color.jpg"
+    url: "https://english.kookmin.ac.kr"
+  - name: "University of California, Irvine"
+    logo: "uci.png"
+    url: "https://uci.edu/"
+  - name: "Semiconductor Research Corporation"
+    logo: "src.png"
+    url: "https://www.src.org/"
+  - name: "NRF"
+    logo: "nrf.jpg"
+    url: "https://www.nrf.re.kr/"
+  - name: "Xilinx"
+    logo: "xilinx.png"
+    url: "https://www.amd.com/en.html"
 ---
 
 <span style="font-weight:bold; font-size:1.2em;"><i>We are polished pioneers at next-generation system architectural solutions!</i></span><br><br>
