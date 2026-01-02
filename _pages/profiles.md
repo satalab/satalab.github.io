@@ -17,6 +17,7 @@ role_titles:
 profiles:
   - name: "Se-Min Ryan Lim"
     role: "Professor"
+    affiliation: "Kookmin University"
     image: "Se-Min_Lim.jpg"
     image_circular: true
     socials:
@@ -35,6 +36,7 @@ profiles:
         
   - name: "Hunjune Choo"
     role: "Undergraduate"
+    affiliation: "Kookmin University"
     image: "HUNJUNE.jpg"
     image_circular: true
     socials:
@@ -50,6 +52,7 @@ profiles:
 
   - name: "Sangjun Park"
     role: "Undergraduate"
+    affiliation: "Kookmin University"
     image: "SANGJOON.jpg"
     image_circular: true
     socials:
@@ -65,6 +68,7 @@ profiles:
 
   - name: "Seoyoung Lee"
     role: "Undergraduate"
+    affiliation: "Kookmin University"
     image: "SEOYOUNG.jpg"
     image_circular: true
     socials:
@@ -80,6 +84,7 @@ profiles:
 
   - name: "Sion Lee"
     role: "Undergraduate"
+    affiliation: "Kookmin University"
     image: "SION.jpg"
     image_circular: true
     socials:
