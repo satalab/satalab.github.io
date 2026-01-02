@@ -74,7 +74,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/news/2025/lab/";
+            window.location.href = "/news/2025/lab_2/";
           
         },
       },{id: "post-sata-lab-39-s-homepage-has-been-officially-launched",
