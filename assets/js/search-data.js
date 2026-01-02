@@ -39,10 +39,10 @@ ninja.data = [{
           },
         },{id: "nav-research",
           title: "Research",
-          description: "A growing collection of your cool projects.",
+          description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/projects/";
+            window.location.href = "/research/";
           },
         },{id: "post-welcome-aboard-sion",
         
