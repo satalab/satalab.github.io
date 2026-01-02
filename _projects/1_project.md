@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 1
-description: with background image
+title: Domain-Specific Architectures
+description:
 img: assets/img/DSA.jpg
 importance: 1
-category: work
+category:
 related_publications: false
 ---
 
