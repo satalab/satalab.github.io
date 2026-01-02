@@ -49,5 +49,46 @@ layout: default
       </h2>
       {% include latest_posts.liquid %}
     {% endif %}
+
+    <!-- Supporters -->
+    {% if page.supporters %}
+      <div class="lab-supporters">
+        {% if page.supporters_title %}
+          <h2 class="lab-supporters-title">{{ page.supporters_title }}</h2>
+        {% endif %}
+
+        <div class="lab-supporters-grid">
+          {% for s in page.supporters %}
+            {% assign logo_path = s.logo | prepend: 'assets/img/' %}
+
+            {% if s.url %}
+              <a class="lab-supporter-item"
+                 href="{{ s.url }}"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 aria-label="{{ s.name }}">
+                <div class="lab-supporter-card">
+                  <img class="lab-supporter-logo"
+                       src="{{ logo_path | relative_url }}"
+                       alt="{{ s.name }}"
+                       loading="lazy"
+                       decoding="async">
+                </div>
+              </a>
+            {% else %}
+              <div class="lab-supporter-item" aria-label="{{ s.name }}">
+                <div class="lab-supporter-card">
+                  <img class="lab-supporter-logo"
+                       src="{{ logo_path | relative_url }}"
+                       alt="{{ s.name }}"
+                       loading="lazy"
+                       decoding="async">
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
   </article>
 </div>
