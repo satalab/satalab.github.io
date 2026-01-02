@@ -63,7 +63,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/news/2025/lab/";
+            window.location.href = "/news/2025/lab_3/";
           
         },
       },{id: "post-welcome-aboard-hunjune-and-sangjun",
