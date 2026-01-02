@@ -52,7 +52,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/news/2025/lab/";
+            window.location.href = "/news/2025/lab_4/";
           
         },
       },{id: "post-prof-se-min-lim-will-be-serving-on-the-session-chair-for-pact-2025",
