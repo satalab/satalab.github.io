@@ -44,7 +44,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/projects/";
           },
-        },{id: "post-sata-lab-39-s-homepage-has-been-officially-launched",
+        },{id: "post-welcome-aboard-hunjune-and-sangjun",
+        
+          title: "Welcome aboard, Hunjune and Sangjun!",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/news/2025/lab/";
+          
+        },
+      },{id: "post-sata-lab-39-s-homepage-has-been-officially-launched",
         
           title: "SATA Lab&#39;s homepage has been officially launched!",
         
