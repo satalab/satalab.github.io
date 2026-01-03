@@ -1,5 +1,6 @@
 ---
 layout: page
+permalink: /research/research_4/
 title: Memory or Storage-Centric Processing
 description: 
 img: assets/img/PIM.jpg
