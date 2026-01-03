@@ -135,7 +135,7 @@ ninja.data = [{
           title: 'Memory or Storage-Centric Processing',
           description: "",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/4_project/";
+              window.location.href = "/research/research_4/";
             },},{
         id: 'social-cv',
         title: 'CV',
