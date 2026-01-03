@@ -1,5 +1,6 @@
 ---
 layout: page
+permalink: /research/research_2/
 title: Heterogeneous Computing Platform
 description: 
 img: assets/img/HETEROGENEOUS.jpg
