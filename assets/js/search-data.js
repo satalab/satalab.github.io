@@ -130,12 +130,12 @@ ninja.data = [{
           title: 'Disaggregated Systems',
           description: "",
           section: "Projects",handler: () => {
-              window.location.href = "/research/research_3/";
+              window.location.href = "/projects/3_project/";
             },},{id: "projects-memory-or-storage-centric-processing",
           title: 'Memory or Storage-Centric Processing',
           description: "",
           section: "Projects",handler: () => {
-              window.location.href = "/research/research_4/";
+              window.location.href = "/projects/4_project/";
             },},{
         id: 'social-cv',
         title: 'CV',
