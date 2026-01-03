@@ -120,7 +120,7 @@ ninja.data = [{
           title: 'Domain-Specific Architectures',
           description: "",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
+              window.location.href = "/research/research_1/";
             },},{id: "projects-heterogeneous-computing-platform",
           title: 'Heterogeneous Computing Platform',
           description: "",
