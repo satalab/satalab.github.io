@@ -1,5 +1,6 @@
 ---
 layout: page
+permalink: /research/research_3/
 title: Disaggregated Systems
 description:
 img: assets/img/DISAGGREGATED.jpg
