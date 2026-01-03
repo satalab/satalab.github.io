@@ -1,5 +1,6 @@
 ---
 layout: page
+permalink: /research/research_1/
 title: Domain-Specific Architectures
 description:
 img: assets/img/DSA.jpg
