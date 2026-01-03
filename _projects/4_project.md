@@ -1,9 +1,8 @@
 ---
 layout: page
 title: Memory or Storage-Centric Processing
-img: assets/img/PIM.jpg
 description: 
-img:
+img: assets/img/PIM.jpg
 importance: 4
 category:
 ---
