@@ -125,12 +125,12 @@ ninja.data = [{
           title: 'Heterogeneous Computing Platform',
           description: "",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
+              window.location.href = "/research/research_2/";
             },},{id: "projects-disaggregated-systems",
           title: 'Disaggregated Systems',
           description: "",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/3_project/";
+              window.location.href = "/research/research_3/";
             },},{id: "projects-memory-or-storage-centric-processing",
           title: 'Memory or Storage-Centric Processing',
           description: "",
