@@ -104,19 +104,7 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-sata-lab-s-homepage-has-been-officially-launched",
-          title: 'SATA Lab’s homepage has been officially launched!',
-          description: "",
-          section: "News",},{id: "news-hunjune-and-sangjun-joined-our-lab-as-undergraduate-interns-welcome",
-          title: 'Hunjune and Sangjun joined our lab as undergraduate interns. Welcome!',
-          description: "",
-          section: "News",},{id: "news-seoyoung-joined-our-lab-as-an-undergraduate-intern-welcome",
-          title: 'Seoyoung joined our lab as an undergraduate intern. Welcome!',
-          description: "",
-          section: "News",},{id: "news-sion-joined-our-lab-as-an-undergraduate-intern-welcome",
-          title: 'Sion joined our lab as an undergraduate intern. Welcome!',
-          description: "",
-          section: "News",},{id: "projects-domain-specific-architectures",
+            },},{id: "projects-domain-specific-architectures",
           title: 'Domain-Specific Architectures',
           description: "",
           section: "Projects",handler: () => {
