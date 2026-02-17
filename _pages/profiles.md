@@ -25,7 +25,7 @@ profiles:
         url: "seminl1@kookmin.ac.kr"
         label: "Email"
       - icon: "ai ai-google-scholar"
-        url: "https://scholar.google.com/citations?user=xZ_EVKEAAAAJ&hl"
+        url: "https://scholar.google.com/citations?user=uNR58VsAAAAJ&hl=en"
         label: "Google Scholar"
       - icon: "fa-brands fa-github"
         url: "https://github.com/SeMinLim"
