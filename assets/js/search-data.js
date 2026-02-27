@@ -44,7 +44,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/research/";
           },
-        },{id: "post-welcome-aboard-sion",
+        },{id: "post-sata-lab-received-a-generous-donation-from-amd",
+        
+          title: "SATA Lab received a generous donation from AMD!",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/news/2026/lab_6/";
+          
+        },
+      },{id: "post-welcome-aboard-sion",
         
           title: "Welcome aboard, Sion!",
         
