@@ -44,7 +44,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/research/";
           },
-        },{id: "post-sata-lab-released-bluevitis-a-boilerplace-codebase-for-amd-fpga-kernel-development-using-bluespec-systemverilog",
+        },{id: "post-our-paper-has-been-accepted-to-isca",
+        
+          title: "Our paper has been accepted to ISCA!",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/news/2026/papers_1/";
+          
+        },
+      },{id: "post-sata-lab-released-bluevitis-a-boilerplace-codebase-for-amd-fpga-kernel-development-using-bluespec-systemverilog",
         
           title: "SATA Lab released blueVitis, a boilerplace codebase for AMD FPGA kernel development using...",
         
