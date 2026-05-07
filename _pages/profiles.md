@@ -35,7 +35,7 @@ profiles:
         label: "LinkedIn"
         
   - name: "Hunjune Choo"
-    role: "Undergraduate"
+    role: "MS"
     affiliation: "Kookmin University"
     image: "HUNJUNE.jpg"
     image_circular: true
