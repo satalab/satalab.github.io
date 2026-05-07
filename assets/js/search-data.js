@@ -44,7 +44,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/research/";
           },
-        },{id: "post-sata-lab-received-a-generous-donation-from-amd",
+        },{id: "post-sata-released-bluevitis-a-boilerplace-codebase-for-amd-fpga-kernel-development-using-bluespec-systemverilog",
+        
+          title: "SATA released blueVitis, a boilerplace codebase for AMD FPGA kernel development using Bluespec...",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/news/2026/opensource_1/";
+          
+        },
+      },{id: "post-sata-lab-received-a-generous-donation-from-amd",
         
           title: "SATA Lab received a generous donation from AMD!",
         
