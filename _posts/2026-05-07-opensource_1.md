@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SATA released blueVitis, a boilerplace codebase for AMD FPGA kernel development using Bluespec SystemVerilog!
+title: SATA Lab released blueVitis, a boilerplace codebase for AMD FPGA kernel development using Bluespec SystemVerilog!
 date: 2026-05-07 00:00:00
 description:
 tags: open-source
