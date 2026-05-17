@@ -77,23 +77,27 @@
   type: time_table
   contents:
     - title: Committee
-      year: 2026 - Current
+      year: 2026
       description:
       - KIISE(Korean Institute of Information Scientists and Engineers)
     - title: Chair
-      year: 2025 - Current
+      year: 2025
       description:
       - title: Session
         contents: 
           - PACT
+    - title: Reviewer
+      year: 2025
+      description:
+      - Journal of Big Data
     - title: Committee
-      year: 2024 - Current
+      year: 2024
       description:
       - title: External Review
         contents: 
           - USENIX ATC
     - title: Reviewer
-      year: 2021 - Current
+      year: 2021 - 2022
       description:
       - IEEE Systems Journal
 
