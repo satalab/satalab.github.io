@@ -55,9 +55,9 @@ ninja.data = [{
             window.location.href = "/news/2026/papers_1/";
           
         },
-      },{id: "post-sata-lab-released-bluevitis-a-boilerplace-codebase-for-amd-fpga-kernel-development-using-bluespec-systemverilog",
+      },{id: "post-sata-lab-released-bluevitis-a-boilerplate-codebase-for-amd-fpga-kernel-development-using-bluespec-systemverilog",
         
-          title: "SATA Lab released blueVitis, a boilerplace codebase for AMD FPGA kernel development using...",
+          title: "SATA Lab released blueVitis, a boilerplate codebase for AMD FPGA kernel development using...",
         
         description: "",
         section: "Posts",
