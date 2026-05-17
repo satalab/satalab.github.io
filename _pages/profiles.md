@@ -97,4 +97,20 @@ profiles:
       - icon: "fa-brands fa-linkedin"
         url: "https://www.linkedin.com/in/zion0815"
         label: "GitHub"
+
+  - name: "Seungkook Baek"
+    role: "Undergraduate"
+    affiliation: "Kookmin University"
+    image: "SEUNGKOOK.jpg"
+    image_circular: true
+    socials:
+      - icon: "fa-solid fa-envelope"
+        url: "jijiunji@kookmin.ac.kr"
+        label: "Email"
+      - icon: "fa-brands fa-github"
+        url: "https://github.com/skybluesoda"
+        label: "GitHub"
+      - icon: "fa-brands fa-linkedin"
+        url: "http://www.linkedin.com/in/%EC%8A%B9%EA%B5%AD-%E2%80%8D%EB%B0%B1-092519406"
+        label: "GitHub"
 ---
