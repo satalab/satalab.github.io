@@ -5,7 +5,7 @@ title: Members
 description:
 nav: true
 nav_order: 3
-role_order: ["Professor", "Postdoc", "PhD", "MS", "Undergraduate", "Alumni"]
+role_order: ["Professor", "Postdoc", "PhD", "MS", "Intern", "Alumni"]
 role_titles:
   Professor: "Professor"
   Postdoc: "Postdoctoral Researchers"
