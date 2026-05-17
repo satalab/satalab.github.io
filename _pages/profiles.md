@@ -10,8 +10,8 @@ role_titles:
   Professor: "Professor"
   Postdoc: "Postdoctoral Researchers"
   PhD: "Ph.D. Students"
-  MS: "M.S. Students"
-  Intern: "Undergraduate Interns"
+  MS: "MS Students"
+  Intern: "BS Interns"
   Alumni: "Alumni"
 
 profiles:
