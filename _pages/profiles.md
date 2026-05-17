@@ -51,7 +51,7 @@ profiles:
         label: "GitHub"
 
   - name: "Sangjun Park"
-    role: "Undergraduate"
+    role: "Interns"
     affiliation: "Kookmin University"
     image: "SANGJOON.jpg"
     image_circular: true
@@ -67,7 +67,7 @@ profiles:
         label: "GitHub"
 
   - name: "Seoyoung Lee"
-    role: "Undergraduate"
+    role: "Interns"
     affiliation: "Kookmin University"
     image: "SEOYOUNG.jpg"
     image_circular: true
@@ -83,7 +83,7 @@ profiles:
         label: "GitHub"
 
   - name: "Sion Lee"
-    role: "Undergraduate"
+    role: "Interns"
     affiliation: "Kookmin University"
     image: "SION.jpg"
     image_circular: true
@@ -99,7 +99,7 @@ profiles:
         label: "GitHub"
 
   - name: "Seungkook Baek"
-    role: "Undergraduate"
+    role: "Interns"
     affiliation: "Kookmin University"
     image: "SEUNGKOOK.jpg"
     image_circular: true
