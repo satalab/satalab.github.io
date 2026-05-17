@@ -88,6 +88,10 @@
 - title: Services
   type: time_table
   contents:
+    - title: Committee
+      year: 2026 - Current
+      description:
+      - KIISE(Korean Institute of Information Scientists and Engineers)
     - title: Chair
       year: 2025 - Current
       description:
@@ -109,10 +113,13 @@
 - title: Talks
   type: time_table
   contents:
+    - title: "Beyond Moore's Law: Breakthrough System Architectural Solutions for Next-Generation Heterogeneous Systems"
+      year: 2026
+      institution: Ajou University
     - title: "Addressing the Data Movement Overhead in Genomics Accelerators"
       year: 2025
       institution: Korea Software Congress 
-    - title: "Beyond Moore, Beyond Memory: System Architectures for the Next Decade of Genomics"
+    - title: "Addressing the Data Movement Overhead in Genomics Accelerators"
       year: 2026
       institution: Computer System Society Conference
       
