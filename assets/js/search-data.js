@@ -44,18 +44,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/research/";
           },
-        },{id: "post-welcome-aboard-seungkook",
-        
-          title: "Welcome aboard, Seungkook!",
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/news/2026/lab_7/";
-          
-        },
-      },{id: "post-our-paper-has-been-accepted-to-isca",
+        },{id: "post-our-paper-has-been-accepted-to-isca",
         
           title: "Our paper has been accepted to ISCA!",
         
