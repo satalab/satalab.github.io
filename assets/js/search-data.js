@@ -44,7 +44,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/research/";
           },
-        },{id: "post-our-paper-has-been-accepted-to-isca",
+        },{id: "post-our-paper-has-been-accepted-to-iccad",
+        
+          title: "Our paper has been accepted to ICCAD!",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/news/2026/papers_2/";
+          
+        },
+      },{id: "post-our-paper-has-been-accepted-to-isca",
         
           title: "Our paper has been accepted to ISCA!",
         
