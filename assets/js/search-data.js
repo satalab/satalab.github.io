@@ -44,7 +44,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/research/";
           },
-        },{id: "post-our-paper-has-been-accepted-to-iccad",
+        },{id: "post-sata-lab-released-blueyosys-a-boilerplate-codebase-for-embedded-fpga-kernel-development-via-yosyshq-amp-bsv",
+        
+          title: "SATA Lab released blueYosys, a boilerplate codebase for embedded FPGA kernel development via...",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/news/2026/opensource_2/";
+          
+        },
+      },{id: "post-our-paper-has-been-accepted-to-iccad",
         
           title: "Our paper has been accepted to ICCAD!",
         
