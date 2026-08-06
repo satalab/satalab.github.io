@@ -44,7 +44,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/research/";
           },
-        },{id: "post-sata-lab-released-blueyosys-a-boilerplate-codebase-for-embedded-fpga-kernel-development-via-yosyshq-amp-bsv",
+        },{id: "post-sang-jun-receives-the-best-paper-award-at-kcc2026",
+        
+          title: "Sang-Jun receives the Best Paper Award at KCC2026!",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/news/2026/lab_7/";
+          
+        },
+      },{id: "post-sata-lab-released-blueyosys-a-boilerplate-codebase-for-embedded-fpga-kernel-development-via-yosyshq-amp-bsv",
         
           title: "SATA Lab released blueYosys, a boilerplate codebase for embedded FPGA kernel development via...",
         
