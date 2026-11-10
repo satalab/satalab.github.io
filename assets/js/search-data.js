@@ -44,7 +44,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/research/";
           },
-        },{id: "post-sang-jun-receives-the-best-paper-award-at-kcc2026",
+        },{id: "post-prof-se-min-lim-will-serve-on-the-program-committee-for-hpc-asia-2027",
+        
+          title: "Prof. Se-Min Lim will serve on the Program Committee for HPC Asia 2027!...",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/news/2026/lab_8/";
+          
+        },
+      },{id: "post-sang-jun-receives-the-best-paper-award-at-kcc2026",
         
           title: "Sang-Jun receives the Best Paper Award at KCC2026!",
         
