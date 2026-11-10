@@ -72,34 +72,20 @@
       location: Seoul, South Korea
       year: 2011.03 - 2017.02
 
-        
+
 - title: Services
-  type: time_table
+  type: map
   contents:
-    - title: Committee
-      year: 2026
-      description:
-      - KIISE(Korean Institute of Information Scientists and Engineers)
-    - title: Chair
-      year: 2025
-      description:
-      - title: Session
-        contents: 
-          - PACT
-    - title: Reviewer
-      year: 2025
-      description:
-      - Journal of Big Data
-    - title: Committee
-      year: 2024
-      description:
-      - title: External Review
-        contents: 
-          - USENIX ATC
-    - title: Reviewer
-      year: 2021 - 2022
-      description:
-      - IEEE Systems Journal
+    - name: Session Chair
+      value: PACT(2025)
+    - name: Organizing Committee
+      value: KIISE(2026)
+    - name: Program Committee
+      value: HPCAsia(2026)
+    - name: External Review Committee
+      value: USENIX ATC(2024)
+    - name: Reviewer
+      value: Journal of Big Data(2025), IEEE Systems Journal(2021, 2022)
 
 
 - title: Talks
@@ -113,8 +99,8 @@
       institution: Computer System Society Conference
     - title: "Addressing the Data Movement Overhead in Genomics Accelerators"
       year: 2025
-      institution: Korea Software Congress 
-      
+      institution: Korea Software Congress
+
 
 - title: Honors and Awards
   type: time_table
