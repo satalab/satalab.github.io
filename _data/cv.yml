@@ -47,10 +47,10 @@
   contents:
     - title: Application-driven, cross-layer system architectural innovations considering emerging accelerators and their real-world implementations
       items:
-        - System Architecture
-        - Hardware Accelerator
-        - Software-Hardware Co-Design
-        - Memory or Storage-Centric Processing
+        - Hardware-Software Co-Design
+        - Hardware Accelerators
+        - Memory- and Storage-Centric Processing
+        - Reconfigurable Computing
 
 
 - title: Education
